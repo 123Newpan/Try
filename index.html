@@ -1,120 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="Try">
+  <meta charset="UTF-8">
   <title>あなたに合う旅診断</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
-      padding: 20px;
-    }
-    .container {
-      max-width: 600px;
-      margin: auto;
-      background: #ffffff;
-      padding: 24px;
-      border-radius: 12px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .question {
-      margin-bottom: 24px;
-    }
-    label {
-      display: block;
-      margin-bottom: 8px;
-      font-size: 14px;
-    }
-    textarea {
-      width: 100%;
-      padding: 10px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 14px;
-    }
-    button {
-      width: 100%;
-      padding: 12px;
-      background: #333;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
 </head>
 
 <body>
-<div class="container">
-  <h1>あなたに合う旅診断</h1>
+<h1>あなたに合う旅診断</h1>
 
-  <form
-    action="https://docs.google.com/forms/d/e/1HLL5aKCZcgT39BoE-bjdxCZI_k67GULAzKlToS3Zxj0/formResponse"
-    method="POST"
-    target="hidden_iframe"
-  >
+<form
+  action="https://docs.google.com/forms/d/e/1HLL5aKCZcgT39BoE-bjdxCZI_k67GULAzKlToS3Zxj0/formResponse"
+  method="POST"
+  target="hidden_iframe"
+>
 
-    <!-- Q1 -->
-    <div class="question">
-      <p>Q1. 今回の旅で一番大切にしたいことは？</p>
-      <label><input type="radio" name="entry.698721081" value="とにかく癒されたい"> とにかく癒されたい</label>
-      <label><input type="radio" name="entry.698721081" value="新しい刺激や体験"> 新しい刺激や体験</label>
-      <label><input type="radio" name="entry.698721081" value="文化や歴史を感じたい"> 文化や歴史を感じたい</label>
-      <label><input type="radio" name="entry.698721081" value="写真や記録を残したい"> 写真や記録を残したい</label>
-    </div>
+<!-- Q1 -->
+<p>Q1. 一番大切にしたいこと</p>
+<label><input type="radio" name="entry.698721081" value="癒し">癒し</label>
+<label><input type="radio" name="entry.698721081" value="刺激">刺激</label>
 
-    <!-- Q2 -->
-    <div class="question">
-      <p>Q2. 旅のペースはどちらが好き？</p>
-      <label><input type="radio" name="entry.239878443" value="ゆったり・余白多め"> ゆったり・余白多め</label>
-      <label><input type="radio" name="entry.239878443" value="ある程度予定を詰めたい"> ある程度予定を詰めたい</label>
-    </div>
+<!-- Q2 -->
+<p>Q2. 旅のペース</p>
+<label><input type="radio" name="entry.239878443" value="ゆったり">ゆったり</label>
+<label><input type="radio" name="entry.239878443" value="詰めたい">詰めたい</label>
 
-    <!-- Q3 -->
-    <div class="question">
-      <p>Q3. 旅行中のあなたは？</p>
-      <label><input type="radio" name="entry.446121656" value="事前にしっかり調べる"> 事前にしっかり調べる</label>
-      <label><input type="radio" name="entry.446121656" value="現地の流れに任せたい"> 現地の流れに任せたい</label>
-    </div>
+<!-- Q3 -->
+<p>Q3. 旅行スタイル</p>
+<label><input type="radio" name="entry.446121656" value="計画派">計画派</label>
+<label><input type="radio" name="entry.446121656" value="気分派">気分派</label>
 
-    <!-- Q4 -->
-    <div class="question">
-      <p>Q4. 気になる要素を選んでください（複数可）</p>
-      <label><input type="checkbox" name="entry.2044164839" value="カフェ・グルメ"> カフェ・グルメ</label>
-      <label><input type="checkbox" name="entry.2044164839" value="自然・景色"> 自然・景色</label>
-      <label><input type="checkbox" name="entry.2044164839" value="街歩き"> 街歩き</label>
-      <label><input type="checkbox" name="entry.2044164839" value="美術館・建築"> 美術館・建築</label>
-    </div>
+<!-- Q4 -->
+<p>Q4. 気になる要素（複数可）</p>
+<label><input type="checkbox" name="entry.2044164839" value="カフェ">カフェ</label>
+<label><input type="checkbox" name="entry.2044164839" value="自然">自然</label>
+<label><input type="checkbox" name="entry.2044164839" value="街歩き">街歩き</label>
 
-    <!-- Q5 -->
-    <div class="question">
-      <p>Q5. 今回の旅は誰と？</p>
-      <label><input type="radio" name="entry.1414980276" value="ひとり"> ひとり</label>
-      <label><input type="radio" name="entry.1414980276" value="友達・恋人"> 友達・恋人</label>
-      <label><input type="radio" name="entry.1414980276" value="家族"> 家族</label>
-    </div>
+<!-- Q5 -->
+<p>Q5. 誰と行く？</p>
+<label><input type="radio" name="entry.1414980276" value="ひとり">ひとり</label>
+<label><input type="radio" name="entry.1414980276" value="友人">友人</label>
 
-    <!-- Q6 -->
-    <div class="question">
-      <p>Q6. 旅について自由に教えてください</p>
-      <textarea
-        name="entry.1352409695"
-        rows="5"
-        placeholder="行ってみたい国・街、不安なこと、旅のイメージなど"
-      ></textarea>
-    </div>
+<!-- Q6 -->
+<p>Q6. 自由記入</p>
+<textarea name="entry.1352409695"></textarea>
 
-    <button type="submit">送信する</button>
-  </form>
+<br><br>
+<button type="submit">送信</button>
 
-  <!-- Googleフォーム送信用（画面には表示されない） -->
-  <iframe name="hidden_iframe" style="display:none;"></iframe>
+</form>
 
-</div>
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
 </body>
 </html>
