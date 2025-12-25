@@ -2,51 +2,27 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>あなたに合う旅診断</title>
+  <title>テスト送信</title>
 </head>
-
 <body>
-<h1>あなたに合う旅診断</h1>
 
 <form
-  action="https://docs.google.com/forms/d/e/1HLL5aKCZcgT39BoE-bjdxCZI_k67GULAzKlToS3Zxj0/formResponse?"
+  action="https://docs.google.com/forms/d/e/1FAIpQLSc9shhp2AQuFSBhOYSVvKYAlW1sq8FWet7dUOneY64QSL0GTw/formResponse"
   method="POST"
   target="hidden_iframe"
 >
 
-<!-- Q1 -->
-<p>Q1. 一番大切にしたいこと</p>
-<label><input type="radio" name="entry.698721081" value="癒し">癒し</label>
-<label><input type="radio" name="entry.698721081" value="刺激">刺激</label>
+  <p>Q1 テスト</p>
+  <label>
+    <input type="radio" name="entry.698721081" value="テスト1" required>
+    テスト1
+  </label>
+  <label>
+    <input type="radio" name="entry.698721081" value="テスト2">
+    テスト2
+  </label>
 
-<!-- Q2 -->
-<p>Q2. 旅のペース</p>
-<label><input type="radio" name="entry.239878443" value="ゆったり">ゆったり</label>
-<label><input type="radio" name="entry.239878443" value="詰めたい">詰めたい</label>
-
-<!-- Q3 -->
-<p>Q3. 旅行スタイル</p>
-<label><input type="radio" name="entry.446121656" value="計画派">計画派</label>
-<label><input type="radio" name="entry.446121656" value="気分派">気分派</label>
-
-<!-- Q4 -->
-<p>Q4. 気になる要素（複数可）</p>
-<label><input type="checkbox" name="entry.2044164839" value="カフェ">カフェ</label>
-<label><input type="checkbox" name="entry.2044164839" value="自然">自然</label>
-<label><input type="checkbox" name="entry.2044164839" value="街歩き">街歩き</label>
-
-<!-- Q5 -->
-<p>Q5. 誰と行く？</p>
-<label><input type="radio" name="entry.1414980276" value="ひとり">ひとり</label>
-<label><input type="radio" name="entry.1414980276" value="友人">友人</label>
-
-<!-- Q6 -->
-<p>Q6. 自由記入</p>
-<textarea name="entry.1352409695"></textarea>
-
-<br><br>
-<button type="submit">送信</button>
-
+  <button type="submit">送信</button>
 </form>
 
 <iframe name="hidden_iframe" style="display:none;"></iframe>
